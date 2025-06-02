@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+header {
+  background: #1eaa59;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 20px;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Gunakan .navbar untuk navigasi */
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 100px;
+}
+
+.navbar a:hover {
+  background-color: #2c7a2d;
+}
+
+.navbar a.active {
+  background-color: #1a5e1b; /* Warna lebih gelap menandakan tombol aktif */
+}
+

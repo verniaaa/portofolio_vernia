@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Profile Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet"
+  />
+    <link href="pengembangstyle.css" rel="stylesheet"/>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+    body {
+      font-family: "Roboto Slab", serif;
+    }
+  </style>
+</head>
+<body class="m-0 p-0">
+  <!-- Top green nav -->
+  <nav
+    class="bg-[#1fae3a] flex items-center justify-between px-6 py-3"
+  >
+    <div>
+      <img
+        alt="es-téh logo in a white circle background"
+        class="w-10 h-10 rounded-full"
+        height="40"
+        src="logo teh.png"
+        width="40"
+        />
+    </div>
+    <ul
+      class="hidden md:flex space-x-6 text-white font-serif text-sm font-semibold"
+    >
+      <li><a class="hover:underline" href="home.html">Home</a></li>
+      <li><a class="hover:underline" href="about.html">About</a></li>
+      <li><a class="hover:underline" href="menu.html">Menu</a></li>
+      <li><a class="hover:underline" href="promo.html">Promo</a></li>
+      <li>
+        <a
+          class="bg-[#1a6e1e] px-3 py-1 rounded-full hover:underline"
+          href="profilindex.html"
+          >Profile</a
+        >
+      </li>
+    </ul>
+  </nav>
+  <!-- Second nav bar -->
+  <nav
+    class="bg-[#4a739f] flex justify-around text-black font-serif font-semibold text-sm py-2"
+  >
+    <a
+      class="bg-[#c7d9e3] px-2 rounded-sm border border-black border-opacity-70 cursor-pointer"
+      href="verniaintroindex.html"
+      >INTRODUCTION</a
+    >
+    <a class="hover:underline cursor-pointer" href="verniaaboutindex.html">ABOUT ME</a>
+    <a class="hover:underline cursor-pointer" href="verniaskillindex.html">SKILL</a>
+    <a class="hover:underline cursor-pointer" href="verniasertifikatindex.html">SERTIFIKAT</a>
+  </nav>
+  <!-- Main content -->
+  <main
+    id="main-content"
+    class="flex flex-col md:flex-row bg-[#c7d9e3] min-h-[calc(100vh-88px)]"
+  >
+    <!-- Left side -->
+    <section
+      id="left-section"
+      class="bg-[#264066] flex flex-col items-center py-8 px-4 md:w-1/3"
+    >
+      <img
+        alt="Portrait of a young woman wearing white hijab and school uniform with blue background"
+        class="rounded-full w-60 h-60 object-cover"
+        height="250"
+        id="profile-img"
+        src="vernia.jpg"
+        width="250"
+      />
+      <div
+        id="profile-name"
+        class="mt-6 bg-white text-black font-extrabold text-xl px-6 py-2 rounded border border-black w-60 text-center"
+      >
+        VERNIA EKA A
+      </div>
+    </section>
+    <!-- Right side -->
+    <section
+      id="right-section"
+      class="flex flex-col justify-start p-8 md:w-2/3"
+    >
+      <h2 id="section-title" class="font-extrabold text-lg mb-2">
+        INTRODUCTION
+      </h2>
+      <h3 id="section-subtitle" class="font-extrabold text-base mb-4">
+        HELLO,
+        <span class="text-[#1fae3a]" id="highlighted-name"
+          >I’M VERNIA EKA AGUSTINE</span
+        >
+      </h3>
+      <p id="section-description" class="font-semibold mb-12 max-w-xl">
+        Saya siswi SMK Negeri 1 Nglegok jurusan Teknik Komputer dan Jaringan.
+      </p>
+      <div
+        id="contact-info"
+        class="space-y-4 text-black font-semibold text-sm max-w-xl"
+      >
+        <div class="flex items-center space-x-3">
+          <i class="fab fa-instagram text-lg"></i>
+          <a 
+            class="underline font-semibold"
+            href="https://www.instagram.com/vernia_eka?igsh=czk0ajR5cTcwNDUx"
+            >@vernia_eka</a
+          >
+        </div>
+        <div class="flex items-center space-x-3">
+          <i class="fas fa-envelope text-lg"></i>
+          <a
+            class="underline font-semibold"
+            href="mailto:verniaekaa@gmail.com"
+            >verniaekaa@gmail.com</a
+          >
+        </div>
+        <div class="flex items-center space-x-3">
+          <i class="fab fa-youtube text-lg"></i>
+          <a
+            class="underline font-semibold"
+            href="https://www.youtube.com/@Verniaekaagustine"
+            >Verniaeka agustine</a
+          >
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // JavaScript to handle tab switching and content update
+    const tabs = {
+      intro: {
+        title: "INTRODUCTION",
+        subtitle: "HELLO, <span class='text-[#1fae3a]'>I’M VERNIA EKA AGUSTINE</span>",
+        description:
+          "Saya siswi SMK Negeri 1 Nglegok jurusan Teknik Komputer dan Jaringan.",
+        imgSrc:
+          "https://storage.googleapis.com/a1aa/image/603495c3-8a97-4105-a6f5-d411531841d0.jpg",
+        name: "VERNIA EKA A",
+        contact: [
+          { icon: "fab fa-instagram", text: "@vernia_eka", link: null },
+          {
+            icon: "fas fa-envelope",
+            text: "verniaekaa@gmail.com",
+            link: "mailto:verniaekaa@gmail.com",
+          },
+          { icon: "fab fa-youtube", text: "Verniaeka agustine", link: null },
+        ],
+      },
+      about: {
+        title: "ABOUT ME",
+        subtitle: "ABOUT ME SECTION",
+        description:
+          "Ini adalah bagian tentang saya. Saya suka belajar pemrograman dan teknologi.",
+        imgSrc:
+          "https://placehold.co/250x250/png?text=About+Me+Image+Placeholder",
+        name: "VERNIA EKA AGUSTINE",
+        contact: [
+          { icon: "fab fa-linkedin", text: "linkedin.com/in/vernia", link: null },
+          {
+            icon: "fas fa-envelope",
+            text: "verniaekaa@gmail.com",
+            link: "mailto:verniaekaa@gmail.com",
+          },
+          { icon: "fab fa-github", text: "github.com/vernia", link: null },
+        ],
+      },
+      skill: {
+        title: "SKILL",
+        subtitle: "MY SKILLS",
+        description:
+          "HTML, CSS, JavaScript, Tailwind CSS, React, Node.js, and more.",
+        imgSrc:
+          "https://placehold.co/250x250/png?text=Skills+Image+Placeholder",
+        name: "VERNIA EKA AGUSTINE",
+        contact: [],
+      },
+      sertifikat: {
+        title: "SERTIFIKAT",
+        subtitle: "CERTIFICATES",
+        description:
+          "I have earned several certificates in programming and networking.",
+        imgSrc:
+          "https://placehold.co/250x250/png?text=Certificates+Image+Placeholder",
+        name: "VERNIA EKA AGUSTINE",
+        contact: [],
+      },
+    };
+
+    const introTab = document.getElementById("intro-tab");
+    const aboutTab = document.getElementById("about-tab");
+    const skillTab = document.getElementById("skill-tab");
+    const sertifikatTab = document.getElementById("sertifikat-tab");
+
+    const sectionTitle = document.getElementById("section-title");
+    const sectionSubtitle = document.getElementById("section-subtitle");
+    const sectionDescription = document.getElementById("section-description");
+    const profileImg = document.getElementById("profile-img");
+    const profileName = document.getElementById("profile-name");
+    const contactInfo = document.getElementById("contact-info");
+
+    function clearActiveTabs() {
+      [introTab, aboutTab, skillTab, sertifikatTab].forEach((tab) => {
+        tab.classList.remove(
+          "bg-[#c7d9e3]",
+          "border",
+          "border-black",
+          "border-opacity-70"
+        );
+        tab.classList.add("hover:underline");
+      });
+    }
+
+    function setActiveTab(tabElement) {
+      clearActiveTabs();
+      tabElement.classList.add(
+        "bg-[#c7d9e3]",
+        "border",
+        "border-black",
+        "border-opacity-70"
+      );
+      tabElement.classList.remove("hover:underline");
+    }
+
+    function updateContent(tabKey) {
+      const tab = tabs[tabKey];
+      sectionTitle.textContent = tab.title;
+      sectionSubtitle.innerHTML = tab.subtitle;
+      sectionDescription.textContent = tab.description;
+      profileImg.src = tab.imgSrc;
+      profileName.textContent = tab.name;
+
+      // Clear contact info
+      contactInfo.innerHTML = "";
+      tab.contact.forEach((item) => {
+        const div = document.createElement("div");
+        div.className = "flex items-center space-x-3";
+
+        const icon = document.createElement("i");
+        icon.className = item.icon + " text-lg";
+        div.appendChild(icon);
+
+        if (item.link) {
+          const a = document.createElement("a");
+          a.href = item.link;
+          a.className = "underline font-semibold";
+          a.textContent = item.text;
+          div.appendChild(a);
+        } else {
+          const span = document.createElement("span");
+          span.textContent = item.text;
+          div.appendChild(span);
+        }
+
+        contactInfo.appendChild(div);
+      });
+    }
+
+    introTab.addEventListener("click", () => {
+      setActiveTab(introTab);
+      updateContent("intro");
+    });
+    aboutTab.addEventListener("click", () => {
+      setActiveTab(aboutTab);
+      updateContent("about");
+    });
+    skillTab.addEventListener("click", () => {
+      setActiveTab(skillTab);
+      updateContent("skill");
+    });
+    sertifikatTab.addEventListener("click", () => {
+      setActiveTab(sertifikatTab);
+      updateContent("sertifikat");
+    });
+
+    // Initialize with intro tab active
+    setActiveTab(introTab);
+    updateContent("intro");
+  </script>
+</body>
+</html>
